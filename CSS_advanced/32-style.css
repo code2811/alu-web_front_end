@@ -1,4 +1,8 @@
-/* Root variables */
+/* Ro`ste the full cleaned CSS content
+git add 32-style.css
+git commit -m "Add full transitions and animations for 32-style.css"
+git push origin main
+iit variables */
 :root {
   --transition-duration: .3s;
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.0);
