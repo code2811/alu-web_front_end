@@ -1,0 +1,36 @@
+/* 32-style.css - Incorporating transitions */
+
+/* Custom properties */
+:root {
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Card work image hover: scale up */
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Card outer hover: shrink */
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Navigation item animation */
+.nav .nav-link::before {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Button hover background animation */
+.button:hover {
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+/* Card inner transitions */
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
