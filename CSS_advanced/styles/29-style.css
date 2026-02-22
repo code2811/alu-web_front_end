@@ -33,7 +33,7 @@
   --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 0.03rem 0;
-  --nav-item-link-hover: var(--color-primary);
+  --nav-item-link-hover: var(--color-white);
 
   --section-tagline-margin: 0;
 }
@@ -323,47 +323,18 @@ ection#latest_news .row {
   margin-top: 0.5rem;
   color: var(--color-dark-grey);
 }
-.section#contact {
-  padding: 4rem 0;
-  text-align: center;
-  font-family: var(--font-family-base);
-}
 
-.section#contact .section-title {
-  font-family: var(--font-family-title);
-  font-size: var(--font-size-xx-large);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: 1rem;
-  color: var(--color-black);
-}
 
-.section#contact .section-tagline {
-  font-family: var(--font-family-title);
-  text-transform: var(--section-tagline-transform);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
-  margin-bottom: 2rem;
+.nav .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 0.2rem;
 }
-
-.section#contact .section-body p {
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-base);
-  color: var(--text-color);
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
-}
-
-.section#contact .button {
+.nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
-  color: var(--color-white);
-  padding: 0.8rem 2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: var(--font-weight-bold);
-  transition: background-color 0.3s ease;
+  width: 100%;
 }
-
-.section#contact .button:hover {
-  background-color: var(--color-dark-grey);
-}
-
