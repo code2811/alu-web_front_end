@@ -1,0 +1,23 @@
+/* Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid */
+.row {
+  display: flex;
+}
+
+[class*='col-'] {
+  padding: 0.5rem;
+}
+```
+
+**Save and exit:**
+```
+CTRL + X → Y → Enter
