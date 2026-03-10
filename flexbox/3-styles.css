@@ -1,0 +1,21 @@
+/* Grid
+============================= */
+.row {
+  display: flex;
+}
+
+[class*='col-'] {
+  padding: 0.5rem;
+}
+
+/* Section Latest news
+============================= */
+.section-latest-news .row {
+  flex-direction: row-reverse;
+}
+
+/* Section SERVICES
+============================= */
+.section-services .row {
+  flex-wrap: wrap;
+}
