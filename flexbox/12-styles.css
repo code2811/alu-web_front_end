@@ -66,3 +66,22 @@ ul.row {
 .section-about-us [class*='col-'] {
   align-self: center;
 }
+
+/*** ARTICLE PAGE ***/
+/* Main article
+============================= */
+.main-article {
+  padding: 5rem 0;
+}
+/* Post
+============================= */
+.post {
+  display: flex;
+}
+.post-content {
+  width: 100%;
+}
+.post-aside {
+  order: -1;
+  min-width: 20%;
+}
