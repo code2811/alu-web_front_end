@@ -9,7 +9,6 @@ ul.row {
 }
 
 [class*='col-'] {
-  padding: 0.5rem;
   margin: 1rem;
 }
 
